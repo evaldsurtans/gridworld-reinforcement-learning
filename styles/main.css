@@ -1,0 +1,97 @@
+html, body {
+    font-family: Arial;
+    font-size:  14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 3px;
+    font-size: 14px;
+    text-align: left;
+}
+
+table button {
+    margin-top: 3px;
+}
+
+#button-add-comp {
+    margin-top: 10px;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 220px;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+}
+
+td input[type="number"],
+td input.importance,
+td input.metric {
+    width: 30px;
+}
+
+table.hide input {
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    float: left;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.cell .arrow {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cell.obstacle {
+    background-color: DarkGrey;
+}
+
+.cell.good {
+    background-color: LightGreen;
+}
+
+.cell.training {
+    background-color: #eee;
+}
+
+fieldset {
+    float: left;
+    display: block;
+}
+
+.cell.bad {
+    background-color: Pink;
+}
+
+#graph {
+    width: 600px;
+    height: 400px;
+}

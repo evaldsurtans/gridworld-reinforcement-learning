@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Evalds Urtans</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="text/javascript" src="./scripts/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="./scripts/numjs.js"></script>
+    <script type="text/javascript" src="./scripts/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <h1>Reinforcment learning (Evalds Urtans)</h1>
+    <fieldset>
+        <legend>Parameters</legend>
+        <div class="field">
+            <label>R(s)</label>
+            <input id="cost-state" type="text" value="-1.2" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Models</legend>
+        <input id="button-value-iteration" type="button" value="Value Iteration" />
+        <br/>
+        <input id="button-direct-estimate" type="button" value="Direct Utility Estimation" />
+        <br/>
+        <input id="button-adp" type="button" value="Adaptive Dynamic Programming" />
+        <br/>
+        <input id="button-td" type="button" value="Temporal Difference" />
+    </fieldset>
+    <fieldset>
+        <legend>Saved map</legend>
+        <div class="field">
+            <input id="input-saved-state" type="text" value="" /><br/>
+            <input id="button-restore" type="button" value="Restore" /><br/>
+            <input id="button-generate" type="button" value="New map" />
+        </div>
+    </fieldset>
+    <div class="clear"></div>
+    <fieldset>
+        <legend>Environment</legend>
+        <div id="env">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Training data</legend>
+        <div id="training">
+        </div>
+    </fieldset>
+    <div class="clear"></div>
+    <fieldset>
+        <legend>Graph</legend>
+        <div id="graph">
+        </div>
+    </fieldset>
+</body>
+
+</html>
